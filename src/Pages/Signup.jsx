@@ -136,8 +136,8 @@ const Signup = () => {
 
                   </div>
 
-                  <div className='grid grid-cols-1 gap-4'>
-                      <div>
+                  <div className='grid grid-cols-1 gap-4 mt-5'>
+                      <div className=''>
                         <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
                           Email
                         </label>

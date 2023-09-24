@@ -36,7 +36,7 @@ const Home = () => {
   <div>
       {/* Category nav */}
       <div className="">
-      <nav className="bg-green-700 text-white md:p-4 p-2 rounded-sm shadow-md" >
+      <nav className="bg-green-600 text-white md:p-4 p-2 rounded-sm shadow-md" >
       <div className="container mx-auto hidden md:block">
 
         <ul className="flex md:space-x-28 space-x-10 items-center justify-center flex-wrap ">
@@ -52,13 +52,13 @@ const Home = () => {
 
       </div>
 
-      <div className="md:hidden flex items-center justify-start">
+      <div className="md:hidden lg:hidden flex items-center justify-start">
       <select
         id="category"
         name="category"
         value={selectedCategory}
         onChange={(e)=> handleFilter(e.target.value)}
-        className="bg-green-400 py-1 px-2 rounded-lg font-semibold text-xl"
+        className="bg-[#E9E4FF] py-1 px-3 rounded-lg font-semibold text-xl text-black"
       >
         <option value="">Select Category</option>
         {categories.map((category,i) => (
@@ -74,7 +74,7 @@ const Home = () => {
       </div>
             {/* Product cards */}
       {filteredProducts.length > 0 ? (
-        <div className="grid xs:gridcols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 mx-auto space-y-10 space-x-5 min-h-[80vh]">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 mx-auto space-y-10 space-x-5 min-h-[80vh] items-center justify-center">
           {filteredProducts.map((p) => (
               <Product key={p.id} product={p} />
           ))}

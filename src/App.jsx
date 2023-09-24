@@ -13,7 +13,7 @@ function App() {
   
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="bg-slate-900 shadow-[0_0_5px_black]">
       <Navbar />
       </div>
