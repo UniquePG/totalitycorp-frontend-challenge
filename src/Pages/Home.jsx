@@ -6,7 +6,6 @@ import { fetchCategory, fetchProduct } from "../Redux/productSlice";
 
 const Home = () => {
 
-  // const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
 
 
@@ -37,19 +36,40 @@ const Home = () => {
   <div>
       {/* Category nav */}
       <div className="">
-      <nav className="bg-green-700 text-white p-4 rounded-sm shadow-md" >
-      <div className="container mx-auto">
-        <ul className="flex space-x-28 items-center justify-center">
+      <nav className="bg-green-700 text-white md:p-4 p-2 rounded-sm shadow-md" >
+      <div className="container mx-auto hidden md:block">
+
+        <ul className="flex md:space-x-28 space-x-10 items-center justify-center flex-wrap ">
           {categories.map((category, i) => (
-            <li key={i} className="relative group">
-              <button onClick={()=> handleFilter(category)} className={`font-medium text-xl hover:text-slate-100 focus:outline-none transition-all duration-300" id="cat ${selectedCategory === category ? " text-slate-300 scale-110" : "text-slate-100"}`}>
+            <li key={i} className=" group">
+              <button onClick={()=> handleFilter(category)} className={`font-medium md:text-xl text-lg hover:text-slate-100 focus:outline-none transition-all duration-300" ${selectedCategory === category ? " text-slate-300 scale-110" : "text-slate-100"}`}>
                 {category}
               </button>
               
             </li>
           ))}
         </ul>
+
       </div>
+
+      <div className="md:hidden flex items-center justify-start">
+      <select
+        id="category"
+        name="category"
+        value={selectedCategory}
+        onChange={(e)=> handleFilter(e.target.value)}
+        className="bg-green-400 py-1 px-2 rounded-lg font-semibold text-xl"
+      >
+        <option value="">Select Category</option>
+        {categories.map((category,i) => (
+          <option key={i} value={category} className="text-black">
+            {category}
+          </option>
+        ))}
+      </select>
+    </div>
+
+
     </nav>
       </div>
             {/* Product cards */}

@@ -12,13 +12,8 @@ const Login = () => {
     })
 
 
-    // const [isValid, setIsValid] = useState(false);
-
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
-    // const firstname = localStorage.getItem("firstname")
-    // console.log("firstname ",firstname);
 
     function handleForm(e) {
         const {name, value } = e.target;
@@ -45,12 +40,9 @@ const Login = () => {
       }
 
       if(values.password === password){
-        // setIsValid(true)
-
         dispatch(LoginForm(true))
         
         navigate("/")
-
       }else{
         toast.error("Wrong password")
         return
