@@ -1,8 +1,21 @@
-# React + Vite
+# TotalityCorp Frontend Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my submission for the TotalityCorp Frontend Challenge. In this project, I have developed a frontend application according to the provided requirements. Below, I will outline my approach and provide details about the tech stack I used.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Running the Application](#running-the-application)
+- [Features](#features)
+- [Deployment](#deployment)
+- [Future Improvements](#future-improvements)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend Framework/Libraries**: [React.js]
+- **Styling**: [TailwindCss]
+- **Version Control**: [GitHub]
+- **Deployment**: [Vercel]
+
+## Project Structure
+Briefly describe the project's directory structure:
+

@@ -8,11 +8,13 @@ const Product = ({ product }) => {
   const dispatch = useDispatch();
 
   console.log("fdfdd ", product);
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  // const isLoggedIn = localStorage.getItem("isLoggedIn");
   const navigate = useNavigate();
 
+  const user = useSelector((state)=> state?.user?.userData)
+
   const addToCart = () => {
-    if(isLoggedIn){
+    if(user.isLoggedIn){
 
       dispatch(add(product));
       toast.success("Item Added To Cart");

@@ -23,7 +23,7 @@ const UserProfileModal = ({ isOpen, onClose, user }) => {
     
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
-          <div className="bg-white p-6 rounded-lg shadow-lg z-50 max-w-[100vw] md:max-w-[50vw] md:w-full md:h-[43vh] min-h-fit h-[62vh] w-[90vw]">
+          <div className="bg-white p-6 rounded-lg shadow-lg z-50 max-w-[100vw] md:max-w-[50vw] md:w-full md:h-[45vh] min-h-fit h-[58vh] w-[90vw]">
 
             <div className="flex justify-evenly items-end md:items-center relative">
             <h2 className="text-2xl font-semibold mb-4 text-center ">User Profile</h2>
@@ -72,7 +72,7 @@ const UserProfileModal = ({ isOpen, onClose, user }) => {
                         <p className="text-gray-800 flex flex-wrap text-right text-xl ">{user.email}</p>
                     </div>
 
-                    <div className="mb-4 grid grid-cols-2 gap-[22vw] md:gap-0 lg:gap-28 ">
+                    <div className="mb-4 grid grid-cols-2 gap-[27vw] md:gap-0 lg:gap-28 ">
                         <label className="text-gray-600 font-semibold text-xl text-left">Phone:</label>
                         <p className="text-gray-800 text-right text-xl">{user.phone}</p>
                     </div>

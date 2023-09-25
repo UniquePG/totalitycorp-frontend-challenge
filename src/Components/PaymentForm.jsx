@@ -9,6 +9,7 @@ const PaymentForm = () => {
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
+          required
           placeholder="1234 5678 9012 3456"
         />
       </div>
@@ -20,6 +21,7 @@ const PaymentForm = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
+            required
             placeholder="MM/YY"
           />
         </div>
@@ -30,6 +32,7 @@ const PaymentForm = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
+            required
             placeholder="123"
           />
         </div>
@@ -41,6 +44,7 @@ const PaymentForm = () => {
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"
+          required
           placeholder="John Doe"
         />
       </div>
